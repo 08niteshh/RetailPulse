@@ -15,28 +15,28 @@
 
 ```mermaid
 graph TD
-    subgraph Client["Presentation Layer (React 19 + Vite + TypeScript + Tailwind CSS)"]
-        UI[Executive SaaS Portal]
-        State[Global Filter & Auth State Context]
-        Charts[Recharts Interactive Visualizations]
-        Studio[Interactive SQL Analytics Runner]
+    subgraph Client["Presentation Layer (React 19 + Vite + TypeScript + Tailwind)"]
+        UI["Executive SaaS Portal"]
+        State["Global Filter & Auth State Context"]
+        Charts["Recharts Interactive Visualizations"]
+        Studio["Interactive SQL Analytics Runner"]
     end
 
     subgraph API["Backend Intelligence Layer (FastAPI + Python + Pydantic v2)"]
-        Router[REST API Endpoints (/api/v1)]
-        Auth[JWT & RBAC Middleware]
-        AnalyticsEngine[Aggregation & KPI Calculation Engine]
-        ForecastEngine[Statsmodels Holt-Winters / ARIMA Engine]
-        AnomalyEngine[Rolling Z-Score & IQR Outlier Detector]
-        CleaningEngine[10-Step CSV Ingestion & Validation Pipeline]
-        RecommendationEngine[Inventory Safety Stock & ROP Optimizer]
-        SQLEngine[Dynamic SQL Query Runner]
+        Router["REST API Endpoints (/api/v1)"]
+        Auth["JWT & RBAC Middleware"]
+        AnalyticsEngine["Aggregation & KPI Calculation Engine"]
+        ForecastEngine["Statsmodels Holt-Winters / ARIMA Engine"]
+        AnomalyEngine["Rolling Z-Score & IQR Outlier Detector"]
+        CleaningEngine["10-Step CSV Ingestion & Validation Pipeline"]
+        RecommendationEngine["Inventory Safety Stock & ROP Optimizer"]
+        SQLEngine["Dynamic SQL Query Runner"]
     end
 
     subgraph Storage["Data & Persistence Layer"]
-        DB[(SQLite / PostgreSQL Storage Engine)]
-        MasterData[(Master Catalog: 500+ SKUs, 25 Stores, 5 Indian Zones)]
-        Transactions[(48,500+ Multi-Year Historical Transactions in ₹ INR)]
+        DB[("SQLite / PostgreSQL Storage Engine")]
+        MasterData[("Master Catalog: 500+ SKUs, 25 Stores, 5 Zones")]
+        Transactions[("48,500+ Multi-Year Historical Transactions in INR")]
     end
 
     UI --> Router
