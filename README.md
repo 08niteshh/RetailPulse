@@ -134,7 +134,7 @@ graph TD
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/retailpulse.git
+git clone https://github.com/08niteshh/RetailPulse.git
 cd retailpulse
 ```
 
