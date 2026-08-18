@@ -68,14 +68,14 @@ export const LoginPage: React.FC = () => {
                 onClick={() => fillDemo('admin')}
                 className="flex items-center justify-center gap-2 px-3 py-2.5 text-xs font-semibold rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/30 hover:bg-blue-500/20 transition-all cursor-pointer shadow-sm shadow-blue-500/5"
               >
-                <ShieldCheck className="w-4 h-4" /> Aarav (Admin)
+                <ShieldCheck className="w-4 h-4" /> Admin Demo
               </button>
               <button
                 type="button"
                 onClick={() => fillDemo('analyst')}
                 className="flex items-center justify-center gap-2 px-3 py-2.5 text-xs font-semibold rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 transition-all cursor-pointer shadow-sm shadow-cyan-500/5"
               >
-                <UserCheck className="w-4 h-4" /> Priya (Analyst)
+                <UserCheck className="w-4 h-4" /> Analyst Demo
               </button>
             </div>
           </div>

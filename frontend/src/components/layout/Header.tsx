@@ -323,8 +323,8 @@ export const Header: React.FC<{ onMenuToggle: () => void }> = ({ onMenuToggle })
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-blue-400"></div>
                         <div className="text-left">
-                          <p className="leading-tight">Aarav Sharma</p>
-                          <p className="text-[10px] text-slate-400">Executive Admin</p>
+                          <p className="leading-tight font-semibold">Admin Profile</p>
+                          <p className="text-[10px] text-slate-400">Executive Access</p>
                         </div>
                       </div>
                       {user?.email === 'admin@retailpulse.io' && (
@@ -344,7 +344,7 @@ export const Header: React.FC<{ onMenuToggle: () => void }> = ({ onMenuToggle })
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-indigo-400"></div>
                         <div className="text-left">
-                          <p className="leading-tight">Priya Patel</p>
+                          <p className="leading-tight font-semibold">Analyst Profile</p>
                           <p className="text-[10px] text-slate-400">Lead BI Analyst</p>
                         </div>
                       </div>
