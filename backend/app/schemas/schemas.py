@@ -1,6 +1,11 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
 from datetime import datetime
+
+try:
+    from pydantic import EmailStr
+except Exception:
+    EmailStr = str  # Safe fallback
 
 # --- Auth Schemas ---
 class UserBase(BaseModel):
